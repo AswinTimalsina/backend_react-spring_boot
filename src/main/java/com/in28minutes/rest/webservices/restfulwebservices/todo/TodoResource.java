@@ -1,6 +1,5 @@
 package com.in28minutes.rest.webservices.restfulwebservices.todo;
 
-
 import java.net.URI;
 import java.util.List;
 
@@ -16,7 +15,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-
 
 
 @RestController
@@ -35,6 +33,7 @@ public class TodoResource {
 	public Todo getAllTodos(@PathVariable String username, @PathVariable long id){
 		return todoService.findById(id);
 	}
+	
 	
 	//Edit/update a todo
 	//put /users/{user_name}/todos/{todo_id}
